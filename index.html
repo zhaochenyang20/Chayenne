@@ -107,7 +107,21 @@
           </div>
           <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="bg-light pt-0">
-            <img src="images/face.jpg" alt="Chayenne" class="img-fluid">
+              <div id="imageGallery" class="bg-light pt-0">
+                <img src="images/face.jpg" alt="Chayenne" class="img-fluid gallery-image">
+              </div>
+
+              <script>
+              const images = ['face.jpg', 'stand.jpg'];
+              let currentIndex = 0;
+              function changeImage() {
+                const galleryImage = document.querySelector('.gallery-image');
+                currentIndex = (currentIndex + 1) % images.length;
+                galleryImage.src = `images/${images[currentIndex]}`;
+              }
+
+              setInterval(changeImage, 5000); // Change image every 5 seconds
+              </script>
             </div>
           </div>
           <div class="col-lg-4 order-2 order-lg-1 text-dark">
