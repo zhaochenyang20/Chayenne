@@ -105,3 +105,18 @@ Please directly search my paper’s name on Google Scholar and cite it with BibT
   year={2024}
 }
 ```
+
+### Spatial Inequities
+
+**Summary**: This study examines the spatial inequities in freight truck crash severity across Los Angeles using deep counterfactual inference models. By analyzing socioeconomic factors, road infrastructure, and environmental conditions, the research reveals significant disparities in crash severity among different communities. The findings inform targeted policy interventions to enhance transportation safety and equity.
+
+**Suggested Topics for Citation**: AI for Science,  Spatial Justice, Transport Geography, Counterfactual Inference, Traffic Safety, Socioeconomic Disparities
+
+```tex
+@article{wang2024navigating,
+  title={Navigating Spatial Inequities in Freight Truck Crash Severity via Counterfactual Inference in Los Angeles},
+  author={Wang, Yichen and Yin, Hao and Yang, Yifan and Zhao, Chenyang and Wang, Siqin},
+  journal={arXiv preprint arXiv:2411.17554},
+  year={2024}
+}
+```
