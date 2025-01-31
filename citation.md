@@ -106,7 +106,7 @@ Please directly search my paper’s name on Google Scholar and cite it with BibT
 }
 ```
 
-### Spatial Inequities
+## Spatial Inequities
 
 **Summary**: This study examines the spatial inequities in freight truck crash severity across Los Angeles using deep counterfactual inference models. By analyzing socioeconomic factors, road infrastructure, and environmental conditions, the research reveals significant disparities in crash severity among different communities. The findings inform targeted policy interventions to enhance transportation safety and equity.
 
