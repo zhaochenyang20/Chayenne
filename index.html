@@ -22,10 +22,10 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
 
 
   <div class="site-wrap">
@@ -38,12 +38,12 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
+
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
-          
+
           <div class="">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -84,34 +84,25 @@
 
         </div>
       </div>
-      
+
     </header>
 
 
-<div class="site-blocks-cover overlay bg-light" id="home-section">
-    <!-- <div class="site-blocks-cover overlay bg-light" id="home-section"> -->
-<!-- <img src="images/face.png" class="img-face " alt="Chayenne Zhao" data-aos="fade"> -->
+    <div class="site-blocks-cover overlay bg-white" id="home-section">
       <div class="container">
         <div class="row justify-content-center">
-
-          <div class="col-md-12 mt-lg-5  align-self-center text-intro">
-            <!-- <div class="row"> -->
-              <!-- <div class="col-lg-6"> -->
-                <h1 class="text-black text-center"
-                 >Chayenne Zhao 赵晨阳</h1>
-                <h1 class="text-black text-center mb-1">zhaochenyang@ucla.edu</h1>
-<!--                 <p><a href="#portfolio-section" class="btn smoothscroll btn-primary">Portfolio</a></p> -->
-
-              <!-- </div> -->
-            <!-- </div> -->
+          <div class="col-md-12 mt-lg-5 align-self-center text-intro">
+            <h1 class="text-black text-center">Chayenne Zhao</h1>
+            <h2 class="text-black text-center">chenyang.zhao@radixark.ai</h2>
+            <h2 class="text-black text-center">没有 Impact 的人生就像没活过一样</h2>
+            <h2 class="text-black text-center">“Life without impact is a life unlived.”</h2>
           </div>
-            
         </div>
       </div>
     </div>
 
 
-    <section class="site-section" id="about-section">
+    <section class="site-section bg-light" id="about-section">
       <div class="container">
         <div class="row ">
           <div class="col-12 mb-4 position-relative">
@@ -119,122 +110,119 @@
           </div>
           <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
             <div class="bg-light pt-0">
-            <img src="images/face.jpg" alt="Chayenne" class="img-fluid">
+              <div id="imageGallery" class="bg-light pt-0" style="display: flex; justify-content: center; align-items: center;">
+                <img src="images/coding.jpg" alt="Chayenne" class="img-fluid gallery-image" style="max-width: 100%; height: auto; max-height: 700px; object-fit: contain;">
+              </div>
+
+              <script>
+              const images = ['coding.jpg'];
+              let currentIndex = 0;
+              function changeImage() {
+                const galleryImage = document.querySelector('.gallery-image');
+                currentIndex = (currentIndex + 1) % images.length;
+                galleryImage.src = `images/${images[currentIndex]}`;
+              }
+
+              setInterval(changeImage, 5000); // Change image every 5 seconds
+              </script>
             </div>
           </div>
-          <div class="col-lg-4 order-2 order-lg-1">
-            <p>I am a CS PhD student at University of California, Los Angeles. <br> <br>I obtained my Bachelor of Engineer Degree at Tsinghua University. </p>
+          <div class="col-lg-4 order-2 order-lg-1 text-dark">
+            <p>Hi there! I am a founding engineer of <a href="https://www.radixark.ai/"><u>RadixArk</u></a>, a CS PhD student quitted, a proud member of <a href="https://lmsys.org/"><u>lmsys.org</u></a>, and a modest learner of <a href="https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial"><u>Machine Learning Systems</u></a>. I live near Los Angeles with my girlfriend and two cats.</u></a></p>
+            <p>I feel honored to be part of <a href="https://github.com/sgl-project/sglang"><u>SGLang</u></a> team and maintain <a href="https://github.com/sgl-project/sglang-omni"><u>SGLang-Omni</u></a> for multi-stage model inference optimization. I always welcome self-motivated engineers and researchers to join us, and try our best to refer new opportunities.</p>
 
-            <p>
-          </p></div>
-          <div class="col-lg-4 order-3 order-lg-3">
-            <p>I was fortunatedly supervised by <a href="https://www.phontron.com/"><u>Graham Neubig</u></a> and <a href="http://cs.cmu.edu/~sherryw"><u>Sherry Wu</u></a> during my undergrad years.</p>
+          </div>
+          <div class="col-lg-4 order-3 order-lg-3 text-dark">
+            <p>I spent one year at UCLA as a PhD student, fortunately advised by <a href="https://web.cs.ucla.edu/~qgu/"><u>Prof. Quanquan Gu</u></a>, <a href="https://sites.google.com/view/yingsheng/home"><u>Dr. Ying Sheng</u></a> and <a href="https://lmzheng.net/"><u>Dr. Lianmin Zheng</u></a>.</p>
+            <p>I obtained my Bachelor's degree at Tsinghua University. At that time, I was supervised by <a href="https://www.phontron.com/"><u>Prof. Graham Neubig</u></a> and <a href="http://cs.cmu.edu/~sherryw"><u>Prof. Tongshuang Wu</u></a> and mentored by <a href="https://www.cs.cmu.edu/~vijayv/"><u>Vijay Viswanathan</u></a> at CMU. Their research guidance and tastes are invaluable to me.</p>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="site-section block__62272" id="research-section">
+    <section class="site-section bg-dark" id="research-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">Research</h2>
-            <p class="section-title text-center mb-5">Language Modelling</p>
-            <p class="section-title text-center mb-5">Machine Learning Systems</p>
+            <h2 class="section-title text-center mb-5 text-white">Research</h2>
+            <p class="section-title text-center mb-5 text-white">Post-training Pipelines</p>
+            <p class="section-title text-center mb-5 text-white">Multi-stage Model Inference</p>
+            </div>
             </div>
           </section>
 
-            <section class="site-section block__62272" id="publication-section"></section>
-            <h2 class="section-title text-center mb-5">Publications</h2>
-            <p class="section-title text-center mb-5">
-              <a href="https://arxiv.org/abs/2404.06395">
-                  <u>Minicpm: Unveiling the potential of small language models with scalable training strategies</u>
-                  <br>COLM 2024
-              </a>
-          </p>
+          <section class="site-section bg-white" id="publication-section">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-12 position-relative">
+                  <h2 class="section-title text-center mb-5">Proud Publications</h2>
 
-	    <p class="section-title text-center mb-5" id="publication-section"><a href="https://arxiv.org/abs/2407.12874"><u>SELF-GUIDE: Better Task-Specific Instruction Following via Self-Synthetic Finetuning</u>
-        <br>COLM 2024
-      </p>
+                  <p class="section-title text-center mb-5">
+                    <a href="https://arxiv.org/abs/2505.23932">
+                        SwingArena: Competitive Programming Arena for Long-context GitHub Issue Solving
+                    </a>
 
-	    <p class="section-title text-center mb-5"><a href="https://arxiv.org/abs/2308.12261"><u>Prompt2Model: Generating Deployable Models from Natural Language Instructions</u>
-        <br>EMNLP 2023 (System Demonstration)
-      </p>
-          </div>
-        </div>
-      </div>
-    </section>
+                  <p class="section-title text-center mb-5">
+                    <a href="https://arxiv.org/abs/2511.07317">
+                        RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments
+                    </a>
 
-    <!-- <div class="site-section" id="services-section">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Teaching Assistant</h2>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-style"></span></div>
-              <div class="service-about">
-                <h3>UI/UX Designer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
+
+
+                 <p class="section-title text-center mb-5">
+                    <a href="https://arxiv.org/abs/2505.15778">
+                        Soft Thinking: Unlocking the Reasoning Potential of LLMs in Continuous Concept Space
+                    </a>
+  
+                  <p class="section-title text-center mb-5">
+                    <a href="https://arxiv.org/abs/2404.06395">
+                        MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies
+                    </a>
+
+
+                  <p class="section-title text-center mb-5">
+                    <a href="https://arxiv.org/abs/2407.07061">
+                        Internet of Agents: Weaving a Web of Heterogeneous Agents for Collaborative Intelligence
+                    </a>
+                  </p>
+
+                </p> <p class="section-title text-center mb-5">
+                  <a href="https://arxiv.org/abs/2407.12874">
+                    SELF-GUIDE: Better Task-Specific Instruction Following via Self-Synthetic Finetuning
+                  </a>
+                </p>
+
+                <p class="section-title text-center mb-5">
+                  <a href="https://arxiv.org/abs/2308.12261">
+                    Prompt2Model: Generating Deployable Models from Natural Language Instructions
+                  </a>
+                </p>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-business_center"></span></div>
-              <div class="service-about">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-desktop_windows"></span></div>
-              <div class="service-about">
-                <h3>Brand &amp; Logo Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-layers"></span></div>
-              <div class="service-about">
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsum error eligendi molestiae eaque quas, ducimus sequi excepturi?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <section class="site-section" id="cv-section">
+    <section class="site-section bg-white" id="cv-section">
       <div class="container">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Resume</h2>
-          <p  class="section-title text-center mb-5"><a href="https://drive.google.com/file/d/1DsZSeDxk6OnJhs0dXA2CySrxzxOvuk8z/view?usp=sharing"><u>Chayenne Zhao CV</u></a></p>
+            <h2 class="section-title text-center mb-5 text-dark">Resume</h2>
+          <p  class="section-title text-center mb-5"><a href="https://www.overleaf.com/read/yfsdfkdjdwdy#099fbe"><u>Chayenne Zhao CV</u></a></p>
           </div>
         </div>
       </div>
 
     </section>
-
-    <section class="site-section"  id="Hobbies-section">
+    <section class="site-section bg-white"  id="Hobbies-section">
       <div class="container">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center">Hobbies</h2>
-            <p  class="section-title text-center mb-1"><u>Steel-string Acoustic Guitar 民谣吉他</u></p>
-            <p  class="section-title text-center mb-1"><u>Swimming, Running and Hiking</u></p>
-            <p  class="section-title text-center mb-1"><u>Cooking Szechwan Cuisine 川菜</u></p>
+            <h2 class="section-title text-center text">Hobbies</h2>
+            <p  class="section-title text-center mb-1 text"><u>Steel-string Acoustic Guitar 民谣吉他</u></p>
+            <p  class="section-title text-center mb-1 text"><u>Swimming, Running and Hiking</u></p>
+            <p  class="section-title text-center mb-5 text"><u>Cooking Szechwan Cuisine 川菜</u></p>
           </div>
         </div>
       </div>
@@ -251,16 +239,52 @@
 
           <div class="slide">
             <blockquote>
-              <p>好的 985 不比大专差</p>
-              <p>Don't fall into the trap of meritocracy</p>
-              <!-- <p><cite>&mdash; Deng Xiaoping</cite></p>
-            </blockquote> -->
+              <p class="text">平庸与伟大消耗的心力相同</p>
+          </div>
+          
+          <div class="slide">
+            <blockquote>
+              <p class="text">没有 impact 的人生就像没活过一样</p>
           </div>
 
           <div class="slide">
             <blockquote>
-              <p>Talk is cheap. Show me the code.</p>
-              <p><cite>&mdash;  Linus Torvalds</cite></p>
+              <!-- <p class="text">Don't fall into the trap of meritocracy</p> -->
+              <p class="text">好的 985 不比大专差</p>
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">生活给了我一拳，但我出的是布</p>
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">能让我抬不起头的只有南加州的太阳</p>
+              <!-- <p class="text">&mdash;  丁胖子广场金牌讲师</p> -->
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">ACL is not an AI conference</p>
+              <!-- <p class="text">&mdash;  Emily M. Bender</p> -->
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">老师，我太想进步了</p>
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">风浪越大，鱼越贵</p>
+              <!-- <p class="text">&mdash; 高启强</p> -->
+          </div>
+
+          <div class="slide">
+            <blockquote>
+              <p class="text">Talk is cheap. Show me the code.</p>
+              <!-- <p class="text"><cite class="text">&mdash;  Linus Torvalds</cite></p> -->
             </blockquote>
           </div>
 
